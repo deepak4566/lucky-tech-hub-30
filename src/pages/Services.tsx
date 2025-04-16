@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { PcCase, HardDrive, Bug, Archive, Tools, Shield, Database, Cloud, Cpu, Wrench } from 'lucide-react';
+import { PcCase, HardDrive, Bug, Archive, Wrench, Shield, Database, Cloud, Cpu, Settings } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -95,7 +95,7 @@ const Services = () => {
             </div>
             
             <div className="flex flex-col items-center text-center p-4">
-              <Tools className="h-16 w-16 text-blue-600 mb-4" />
+              <Settings className="h-16 w-16 text-blue-600 mb-4" />
               <h3 className="text-xl font-medium mb-2">Quality Repairs</h3>
               <p className="text-gray-600">We use high-quality components and thorough testing procedures for all repairs.</p>
             </div>
