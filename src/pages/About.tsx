@@ -10,7 +10,7 @@ const About = () => {
       <Navbar />
       
       {/* Header */}
-      <section className="pt-24 pb-12 bg-blue-600 text-white">
+      <section className="pt-24 pb-12 bg-gradient-to-br from-red-800 via-red-600 to-orange-500 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">About Us</h1>
           <p className="text-xl">Get to know LUCKY COMPUTERS</p>
@@ -57,7 +57,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center p-6">
               <div className="flex justify-center mb-4">
-                <CheckCircle className="h-16 w-16 text-blue-600" />
+                <CheckCircle className="h-16 w-16 text-red-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Quality</h3>
               <CardContent className="p-0">
@@ -69,7 +69,7 @@ const About = () => {
             
             <Card className="text-center p-6">
               <div className="flex justify-center mb-4">
-                <Users className="h-16 w-16 text-blue-600" />
+                <Users className="h-16 w-16 text-red-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Customer Focus</h3>
               <CardContent className="p-0">
@@ -81,7 +81,7 @@ const About = () => {
             
             <Card className="text-center p-6">
               <div className="flex justify-center mb-4">
-                <Clock className="h-16 w-16 text-blue-600" />
+                <Clock className="h-16 w-16 text-red-600" />
               </div>
               <h3 className="text-xl font-bold mb-2">Efficiency</h3>
               <CardContent className="p-0">
