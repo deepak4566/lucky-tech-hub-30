@@ -5,6 +5,13 @@ import { ArrowRight, PcCase, HardDrive, Bug, Archive, Star } from 'lucide-react'
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { 
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from "@/components/ui/carousel";
 
 const Index = () => {
   return (
@@ -12,8 +19,15 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <section className="pt-20 relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div className="absolute inset-0 overflow-hidden opacity-20">
+          <img 
+            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+            alt="Computer background" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
           <div className="text-center md:text-left md:w-2/3">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">LUCKY COMPUTERS</h1>
             <p className="text-xl md:text-2xl mb-8">Reliable. Affordable. Local Tech Experts.</p>
@@ -86,8 +100,61 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
+      {/* Featured Work Carousel */}
       <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900">Featured Work</h2>
+            <p className="mt-4 text-xl text-gray-600">See our recent projects and services</p>
+          </div>
+          
+          <Carousel className="w-full max-w-5xl mx-auto">
+            <CarouselContent>
+              <CarouselItem>
+                <div className="p-1">
+                  <div className="overflow-hidden rounded-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
+                      alt="Computer repair" 
+                      className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
+                    />
+                  </div>
+                  <h3 className="text-xl font-medium mt-4 text-center">Circuit Board Repair</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <div className="overflow-hidden rounded-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" 
+                      alt="Laptop repair" 
+                      className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
+                    />
+                  </div>
+                  <h3 className="text-xl font-medium mt-4 text-center">Laptop Services</h3>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-1">
+                  <div className="overflow-hidden rounded-lg">
+                    <img 
+                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                      alt="Computer support" 
+                      className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
+                    />
+                  </div>
+                  <h3 className="text-xl font-medium mt-4 text-center">Technical Support</h3>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+        </div>
+      </section>
+      
+      {/* Testimonials Section */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Why Choose Us</h2>
