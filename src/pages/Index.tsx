@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, PcCase, HardDrive, Bug, Archive, Star } from 'lucide-react';
+import { ArrowRight, PcCase, HardDrive, Bug, Archive, Star, Calendar, MapPin, Phone, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -19,7 +19,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-20 relative bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="pt-20 relative bg-gradient-to-br from-blue-800 via-blue-600 to-teal-500 text-white">
         <div className="absolute inset-0 overflow-hidden opacity-20">
           <img 
             src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
@@ -28,14 +28,50 @@ const Index = () => {
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
-          <div className="text-center md:text-left md:w-2/3">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">LUCKY COMPUTERS</h1>
-            <p className="text-xl md:text-2xl mb-8">Reliable. Affordable. Local Tech Experts.</p>
-            <Link to="/contact">
-              <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
-                Visit Store <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <img 
+                src="/lovable-uploads/9a4c33af-8c3b-406a-83c2-87605cc2974d.png" 
+                alt="Lucky Computers Logo" 
+                className="w-full max-w-[300px] rounded-lg"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">LUCKY COMPUTERS</h1>
+              <p className="text-xl md:text-2xl mb-8">Reliable. Affordable. Local Tech Experts.</p>
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                <Link to="/contact">
+                  <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
+                    Visit Store <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Button size="lg" variant="secondary" className="bg-blue-700 text-white hover:bg-blue-800">
+                  <Calendar className="mr-2 h-5 w-5" /> Opening 24th April 2025
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Location Banner */}
+      <section className="bg-blue-50 py-4 border-y border-blue-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center md:justify-between gap-4 text-blue-800">
+            <div className="flex items-center">
+              <MapPin className="mr-2 h-5 w-5" />
+              <p className="font-medium">Near the Metro Station, Pillar No. 808, Kukatpally, Hyderabad</p>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <a href="tel:9618849601" className="flex items-center hover:text-blue-600">
+                <Phone className="mr-2 h-5 w-5" />
+                <span>96188 49601</span>
+              </a>
+              <a href="http://www.luckycomputers.in" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-blue-600">
+                <Globe className="mr-2 h-5 w-5" />
+                <span>www.luckycomputers.in</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -51,7 +87,9 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="service-card">
               <CardHeader>
-                <Archive className="h-12 w-12 text-blue-600 mb-2" />
+                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
+                  <Archive className="h-7 w-7 text-blue-600" />
+                </div>
                 <CardTitle>Refurbished, Sales and Services</CardTitle>
               </CardHeader>
               <CardContent>
@@ -61,7 +99,9 @@ const Index = () => {
             
             <Card className="service-card">
               <CardHeader>
-                <Bug className="h-12 w-12 text-blue-600 mb-2" />
+                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
+                  <Bug className="h-7 w-7 text-blue-600" />
+                </div>
                 <CardTitle>Malware Removal</CardTitle>
               </CardHeader>
               <CardContent>
@@ -71,7 +111,9 @@ const Index = () => {
             
             <Card className="service-card">
               <CardHeader>
-                <PcCase className="h-12 w-12 text-blue-600 mb-2" />
+                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
+                  <PcCase className="h-7 w-7 text-blue-600" />
+                </div>
                 <CardTitle>PC & Laptop Repairs</CardTitle>
               </CardHeader>
               <CardContent>
@@ -81,7 +123,9 @@ const Index = () => {
             
             <Card className="service-card">
               <CardHeader>
-                <HardDrive className="h-12 w-12 text-blue-600 mb-2" />
+                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
+                  <HardDrive className="h-7 w-7 text-blue-600" />
+                </div>
                 <CardTitle>Data Recovery & Backup</CardTitle>
               </CardHeader>
               <CardContent>
