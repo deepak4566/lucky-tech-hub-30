@@ -51,7 +51,7 @@ const Gallery = () => {
       <Navbar />
       
       {/* Header */}
-      <section className="pt-24 pb-12 bg-gradient-to-br from-red-800 via-red-600 to-orange-500 text-white">
+      <section className="pt-24 pb-12 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">Gallery</h1>
           <p className="text-xl">Take a look at our shop and services</p>
