@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
@@ -30,9 +29,14 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 mb-1">Address</h3>
-                    <p className="text-gray-600">
+                    <a 
+                      href="https://maps.app.goo.gl/DNbU6Gd86KLLA9sG9"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-gray-600 hover:text-blue-600"
+                    >
                       Near the Metro Station, Pillar No. 808, Kukatpally, Hyderabad, Telangana 500072
-                    </p>
+                    </a>
                   </div>
                 </div>
               </Card>
