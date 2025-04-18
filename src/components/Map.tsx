@@ -16,13 +16,13 @@ export const Map = () => {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/streets-v12',
-      center: [78.430554, 17.484977], // Coordinates for Kukatpally, Hyderabad
+      center: [78.42980653776317, 17.48458803820088], // Updated coordinates for Lucky Computers
       zoom: 15,
     });
 
     // Add marker
     new mapboxgl.Marker()
-      .setLngLat([78.430554, 17.484977])
+      .setLngLat([78.42980653776317, 17.48458803820088])
       .addTo(map.current);
 
     // Add navigation controls
