@@ -1,9 +1,9 @@
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Phone, MapPin, Globe, Mail } from 'lucide-react';
-import Map from '@/components/Map';
 
 const Contact = () => {
   return (
@@ -76,13 +76,23 @@ const Contact = () => {
               </Card>
             </div>
             
-            {/* Map */}
+            {/* Google Maps */}
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Find Us</h2>
-              <Map />
+              <div className="w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  src="https://maps.app.goo.gl/DNbU6Gd86KLLA9sG9"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
               <div className="mt-4 flex justify-center">
                 <a 
-                  href="https://goo.gl/maps/JZQKxdnP7P1gxh9L6" 
+                  href="https://maps.app.goo.gl/DNbU6Gd86KLLA9sG9" 
                   target="_blank" 
                   rel="noreferrer"
                 >
