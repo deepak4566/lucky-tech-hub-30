@@ -1,9 +1,9 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Phone, MapPin, Globe, Mail } from 'lucide-react';
+import Map from '@/components/Map';
 
 const Contact = () => {
   return (
@@ -79,24 +79,14 @@ const Contact = () => {
             {/* Map */}
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Find Us</h2>
-              <div className="h-[500px] rounded-lg overflow-hidden shadow-lg">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.866487496869!2d78.43055371048496!3d17.48497729999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb913ef0b8ee83%3A0xc938a6fe3a14c017!2sPillar%20No%20808%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500072!5e0!3m2!1sen!2sin!4v1650396800000!5m2!1sen!2sin" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Lucky Computers Location"
-                />
-              </div>
+              <Map />
               <div className="mt-4 flex justify-center">
                 <a 
                   href="https://goo.gl/maps/JZQKxdnP7P1gxh9L6" 
                   target="_blank" 
                   rel="noreferrer"
                 >
-                  <Button className="bg-blue-600 hover:bg-blue-700">
+                  <Button className="bg-red-600 hover:bg-red-700">
                     Get Directions
                   </Button>
                 </a>
