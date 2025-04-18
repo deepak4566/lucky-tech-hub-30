@@ -21,13 +21,13 @@ const NotFound = () => {
       
       <div className="flex-grow flex items-center justify-center bg-gray-50">
         <div className="text-center px-4">
-          <h1 className="text-6xl font-bold text-blue-600 mb-4">404</h1>
+          <h1 className="text-6xl font-bold text-red-600 mb-4">404</h1>
           <p className="text-2xl text-gray-900 mb-8">Oops! Page not found</p>
           <p className="text-lg text-gray-600 mb-8">
             The page you're looking for doesn't exist or has been moved.
           </p>
           <Link to="/">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button size="lg" className="bg-red-600 hover:bg-red-700">
               Return to Home
             </Button>
           </Link>

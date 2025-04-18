@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221 83% 53%;
+    --primary: 0 72% 51%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -46,7 +46,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 0 72% 51%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -78,7 +78,7 @@
 }
 
 .hero-section {
-  background: linear-gradient(to bottom right, #1e40af, #0891b2);
+  background: linear-gradient(to bottom right, #c81e1e, #f97316);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,4 +95,3 @@
 .lucky-logo {
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
-

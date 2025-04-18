@@ -19,7 +19,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-20 relative bg-gradient-to-br from-blue-800 via-blue-600 to-teal-500 text-white">
+      <section className="pt-20 relative bg-gradient-to-br from-red-800 via-red-600 to-orange-500 text-white">
         <div className="absolute inset-0 overflow-hidden opacity-20">
           <img 
             src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
@@ -41,11 +41,11 @@ const Index = () => {
               <p className="text-xl md:text-2xl mb-8">Reliable. Affordable. Local Tech Experts.</p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
+                  <Button size="lg" className="bg-white text-red-700 hover:bg-gray-100">
                     Visit Store <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <Button size="lg" variant="secondary" className="bg-blue-700 text-white hover:bg-blue-800">
+                <Button size="lg" variant="secondary" className="bg-red-700 text-white hover:bg-red-800">
                   <Calendar className="mr-2 h-5 w-5" /> Opening 24th April 2025
                 </Button>
               </div>
@@ -55,19 +55,19 @@ const Index = () => {
       </section>
       
       {/* Location Banner */}
-      <section className="bg-blue-50 py-4 border-y border-blue-100">
+      <section className="bg-red-50 py-4 border-y border-red-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center md:justify-between gap-4 text-blue-800">
+          <div className="flex flex-wrap items-center justify-center md:justify-between gap-4 text-red-800">
             <div className="flex items-center">
               <MapPin className="mr-2 h-5 w-5" />
               <p className="font-medium">Near the Metro Station, Pillar No. 808, Kukatpally, Hyderabad</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <a href="tel:9618849601" className="flex items-center hover:text-blue-600">
+              <a href="tel:9618849601" className="flex items-center hover:text-red-600">
                 <Phone className="mr-2 h-5 w-5" />
                 <span>96188 49601</span>
               </a>
-              <a href="http://www.luckycomputers.in" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-blue-600">
+              <a href="http://www.luckycomputers.in" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-red-600">
                 <Globe className="mr-2 h-5 w-5" />
                 <span>www.luckycomputers.in</span>
               </a>
@@ -87,8 +87,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="service-card">
               <CardHeader>
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
-                  <Archive className="h-7 w-7 text-blue-600" />
+                <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center mb-2">
+                  <Archive className="h-7 w-7 text-red-600" />
                 </div>
                 <CardTitle>Refurbished, Sales and Services</CardTitle>
               </CardHeader>
@@ -99,8 +99,8 @@ const Index = () => {
             
             <Card className="service-card">
               <CardHeader>
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
-                  <Bug className="h-7 w-7 text-blue-600" />
+                <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center mb-2">
+                  <Bug className="h-7 w-7 text-red-600" />
                 </div>
                 <CardTitle>Malware Removal</CardTitle>
               </CardHeader>
@@ -111,8 +111,8 @@ const Index = () => {
             
             <Card className="service-card">
               <CardHeader>
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
-                  <PcCase className="h-7 w-7 text-blue-600" />
+                <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center mb-2">
+                  <PcCase className="h-7 w-7 text-red-600" />
                 </div>
                 <CardTitle>PC & Laptop Repairs</CardTitle>
               </CardHeader>
@@ -123,8 +123,8 @@ const Index = () => {
             
             <Card className="service-card">
               <CardHeader>
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
-                  <HardDrive className="h-7 w-7 text-blue-600" />
+                <div className="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center mb-2">
+                  <HardDrive className="h-7 w-7 text-red-600" />
                 </div>
                 <CardTitle>Data Recovery & Backup</CardTitle>
               </CardHeader>
@@ -136,7 +136,7 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <Link to="/services">
-              <Button variant="outline">
+              <Button variant="outline" className="border-red-500 text-red-500 hover:bg-red-50">
                 View All Services <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -208,7 +208,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <div className="flex items-center text-yellow-500 mb-2">
+                <div className="flex items-center text-orange-500 mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-current" />
                   ))}
@@ -224,7 +224,7 @@ const Index = () => {
             
             <Card>
               <CardHeader>
-                <div className="flex items-center text-yellow-500 mb-2">
+                <div className="flex items-center text-orange-500 mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-current" />
                   ))}
@@ -240,7 +240,7 @@ const Index = () => {
             
             <Card>
               <CardHeader>
-                <div className="flex items-center text-yellow-500 mb-2">
+                <div className="flex items-center text-orange-500 mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-current" />
                   ))}
@@ -258,18 +258,18 @@ const Index = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-red-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Need Tech Support?</h2>
           <p className="text-xl mb-8">Visit our store or contact us for immediate assistance</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Button size="lg" variant="outline" className="bg-white text-red-600 hover:bg-gray-100">
                 Contact Us
               </Button>
             </Link>
             <a href="tel:9618849601">
-              <Button size="lg" variant="secondary" className="bg-blue-700 text-white hover:bg-blue-800">
+              <Button size="lg" variant="secondary" className="bg-red-700 text-white hover:bg-red-800">
                 Call Now
               </Button>
             </a>
