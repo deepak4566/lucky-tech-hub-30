@@ -38,7 +38,14 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300">Near the Metro Station, Pillar No. 808, Kukatpally, Hyderabad, Telangana 500072</span>
+                <a 
+      href="https://maps.app.goo.gl/wPUybFNvaix7LXE16" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="text-gray-300 hover:underline cursor-pointer"
+    >
+      Near the Metro Station, Pillar No. 808, Kukatpally, Hyderabad, Telangana 500072
+    </a>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-blue-400" />

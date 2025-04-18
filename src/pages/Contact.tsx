@@ -30,7 +30,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 mb-1">Address</h3>
                     <a 
-                      href="https://maps.app.goo.gl/DNbU6Gd86KLLA9sG9"
+                      href="https://maps.app.goo.gl/wPUybFNvaix7LXE16"
                       target="_blank"
                       rel="noreferrer"
                       className="text-gray-600 hover:text-blue-600"
