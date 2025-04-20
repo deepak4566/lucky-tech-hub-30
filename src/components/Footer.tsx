@@ -1,6 +1,5 @@
-
 import { Link } from 'react-router-dom';
-import { Phone, MapPin, Globe } from 'lucide-react';
+import { Phone, MapPin, Globe, Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -56,6 +55,27 @@ const Footer = () => {
                 <a href="http://www.luckycomputers.in" className="text-gray-300 hover:text-white">www.luckycomputers.in</a>
               </li>
             </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a 
+                href="https://www.instagram.com/luckycomputers_official?igsh=MXRwZWJrNHUwY24zaw==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://youtube.com/@luckycomputers-official?si=ixf7if2vZXEVaQHa" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white"
+              >
+                <Youtube className="h-6 w-6" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400">
