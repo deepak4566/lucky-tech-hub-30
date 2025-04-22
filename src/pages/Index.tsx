@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, PcCase, HardDrive, Bug, Archive, Star, Calendar, MapPin, Phone, Globe } from 'lucide-react';
@@ -63,13 +62,13 @@ const Index = () => {
               <p className="font-medium">Near the Metro Station, Pillar No. 808, Kukatpally, Hyderabad</p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <a href="tel:9618849601" className="flex items-center hover:text-blue-600">
+              <a href="tel:9391919214" className="flex items-center hover:text-blue-600">
                 <Phone className="mr-2 h-5 w-5" />
-                <span>96188 49601</span>
+                <span>9391919214</span>
               </a>
-              <a href="http://www.luckycomputers.in" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-blue-600">
-                <Globe className="mr-2 h-5 w-5" />
-                <span>www.luckycomputers.in</span>
+              <a href="tel:9391919215" className="flex items-center hover:text-blue-600">
+                <Phone className="mr-2 h-5 w-5" />
+                <span>9391919215</span>
               </a>
             </div>
           </div>
