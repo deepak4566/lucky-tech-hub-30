@@ -31,6 +31,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center" onClick={closeMenu}>
+              <img 
+                src="/lovable-uploads/3ff4639a-0bb0-4385-80ab-aa33e7bd3fb8.png" 
+                alt="Lucky Computers Logo" 
+                className="h-10 w-auto mr-2"
+              />
               <span className="text-blue-600 font-bold text-xl md:text-2xl">LUCKY COMPUTERS</span>
             </Link>
           </div>

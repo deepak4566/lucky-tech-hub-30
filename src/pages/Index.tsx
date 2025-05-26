@@ -31,7 +31,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-shrink-0">
               <img 
-                src="/lovable-uploads/3ff4639a-0bb0-4385-80ab-aa33e7bd3fb8.png" 
+                src="/lovable-uploads/9a4c33af-8c3b-406a-83c2-87605cc2974d.png" 
                 alt="Lucky Computers Logo" 
                 className="w-full max-w-[300px] rounded-lg"
               />
