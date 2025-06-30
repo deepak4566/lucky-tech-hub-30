@@ -9,40 +9,28 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
-      alt: "Computer repair workstation"
+      src: "/lovable-uploads/55871e73-5f88-4761-9b04-7b36cd36e5df.png",
+      alt: "Lucky Computers store front with signboard"
     },
     {
-      src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
-      alt: "Circuit board close-up"
+      src: "/lovable-uploads/93759444-6f5d-4004-beae-7a8b2c151401.png",
+      alt: "Interior view of Lucky Computers showroom with laptops display"
     },
     {
-      src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80",
-      alt: "Programming and development"
+      src: "/lovable-uploads/9448a7c8-bac1-4d3b-a07f-7c8e9b9ca65a.png",
+      alt: "Dell laptops collection and repair workspace"
     },
     {
-      src: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80",
-      alt: "Working on laptop"
+      src: "/lovable-uploads/67f13e2e-8806-4d01-845e-1b130fb946d2.png",
+      alt: "Technician repairing laptop motherboard"
     },
     {
-      src: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=600&q=80",
-      alt: "Modern laptop display"
+      src: "/lovable-uploads/7054d21a-dba8-4e4f-bd36-481991f01e3f.png",
+      alt: "Professional laptop repair service in progress"
     },
     {
-      src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
-      alt: "Computer repair shop"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=600&q=80",
-      alt: "Office setup with desktop computer"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80",
-      alt: "Coding on computer"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=600&q=80",
-      alt: "Laptop with code"
+      src: "/lovable-uploads/1c596bdc-4678-4903-81c3-ac659f7ad0e8.png",
+      alt: "Close-up of laptop motherboard repair work"
     }
   ];
 
