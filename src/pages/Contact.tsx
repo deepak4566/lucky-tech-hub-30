@@ -1,3 +1,4 @@
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
@@ -30,7 +31,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 mb-1">Address</h3>
                     <a 
-                      href="https://maps.app.goo.gl/wPUybFNvaix7LXE16"
+                      href="https://maps.app.goo.gl/f3W92XomxbqyFWiM9"
                       target="_blank"
                       rel="noreferrer"
                       className="text-gray-600 hover:text-blue-600"
@@ -85,7 +86,7 @@ const Contact = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Find Us</h2>
               <div className="w-full h-[500px] rounded-lg overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7551567220804!2d78.41847927506657!3d17.48352989980019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb914765a5378d%3A0xf0dee7573b9cb0ba!2sLucky%20Computer!5e0!3m2!1sen!2sin!4v1713630344400!5m2!1sen!2sin!4v1713630344400!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.7551567220804!2d78.41847927506657!3d17.48352989980019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb914765a5378d%3A0xf0dee7573b9cb0ba!2sLucky%20Computer!5e0!3m2!1sen!2sin!4v1713630344400!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -96,7 +97,7 @@ const Contact = () => {
               </div>
               <div className="mt-4 flex justify-center">
                 <a 
-                  href="https://maps.app.goo.gl/DNbU6Gd86KLLA9sG9" 
+                  href="https://maps.app.goo.gl/f3W92XomxbqyFWiM9" 
                   target="_blank" 
                   rel="noreferrer"
                 >
