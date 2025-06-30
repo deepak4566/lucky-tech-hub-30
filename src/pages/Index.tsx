@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, PcCase, HardDrive, Bug, Archive, Star, Calendar, MapPin, Phone, Globe } from 'lucide-react';
@@ -28,27 +27,15 @@ const Index = () => {
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-shrink-0">
-              <img 
-                src="/lovable-uploads/9a4c33af-8c3b-406a-83c2-87605cc2974d.png" 
-                alt="Lucky Computers Logo" 
-                className="w-full max-w-[300px] rounded-lg"
-              />
-            </div>
-            <div className="text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">LUCKY COMPUTERS</h1>
-              <p className="text-xl md:text-2xl mb-8">Reliable. Affordable. Local Tech Experts.</p>
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <Link to="/contact">
-                  <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
-                    Visit Store <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-                <Button size="lg" variant="secondary" className="bg-blue-700 text-white hover:bg-blue-800">
-                  <Calendar className="mr-2 h-5 w-5" /> Opening 24th April 2025
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">LUCKY COMPUTERS</h1>
+            <p className="text-xl md:text-2xl mb-8">Reliable. Affordable. Local Tech Experts.</p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link to="/contact">
+                <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
+                  Visit Store <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -268,9 +255,9 @@ const Index = () => {
                 Contact Us
               </Button>
             </Link>
-            <a href="tel:9618849601">
+            <a href="tel:9391919214">
               <Button size="lg" variant="secondary" className="bg-blue-700 text-white hover:bg-blue-800">
-                Call Now
+                Call Now  
               </Button>
             </a>
           </div>
