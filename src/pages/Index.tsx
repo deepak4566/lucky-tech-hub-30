@@ -181,7 +181,7 @@ const Index = () => {
             <p className="mt-4 text-xl text-gray-600">Browse our collection of quality refurbished laptops from top brands</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="overflow-hidden">
                 <img 
@@ -250,6 +250,42 @@ const Index = () => {
               <CardContent>
                 <CardDescription className="text-center">
                   High-performance ASUS laptops ideal for gaming and productivity.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" 
+                  alt="MacBook Laptops" 
+                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-center">MacBook</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-center">
+                  Premium Apple MacBook Air and Pro models with excellent build quality.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1484788984921-03950022c9ef" 
+                  alt="Acer Laptops" 
+                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-center">Acer Laptops</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-center">
+                  Affordable Acer laptops perfect for everyday computing and entertainment.
                 </CardDescription>
               </CardContent>
             </Card>
