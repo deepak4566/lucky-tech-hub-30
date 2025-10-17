@@ -29,11 +29,17 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">LUCKY COMPUTERS</h1>
-            <p className="text-xl md:text-2xl mb-8">Reliable. Affordable. Local Tech Experts.</p>
+            <p className="text-xl md:text-2xl mb-4">Quality Refurbished Laptops at Unbeatable Prices</p>
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Your trusted destination for affordable, high-performance refurbished laptops in Hyderabad</p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link to="/contact">
+              <Link to="/services">
                 <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
-                  Visit Store <ArrowRight className="ml-2 h-5 w-5" />
+                  Browse Laptops <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700">
+                  Visit Store
                 </Button>
               </Link>
             </div>
@@ -63,27 +69,63 @@ const Index = () => {
         </div>
       </section>
       
+      {/* Refurbished Laptops Highlight Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900">Premium Refurbished Laptops</h2>
+            <p className="mt-4 text-xl text-gray-600">Top brands, tested quality, warranty included</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <Card className="text-center">
+              <CardHeader>
+                <div className="mx-auto h-16 w-16 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                  <Archive className="h-8 w-8 text-blue-600" />
+                </div>
+                <CardTitle>Wide Selection</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>Dell, HP, Lenovo, and more premium brands available in various configurations</CardDescription>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center">
+              <CardHeader>
+                <div className="mx-auto h-16 w-16 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                  <Star className="h-8 w-8 text-blue-600" />
+                </div>
+                <CardTitle>Quality Tested</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>Every laptop thoroughly inspected, cleaned, and tested before sale</CardDescription>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center">
+              <CardHeader>
+                <div className="mx-auto h-16 w-16 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+                  <Calendar className="h-8 w-8 text-blue-600" />
+                </div>
+                <CardTitle>Warranty Included</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>All refurbished laptops come with warranty for your peace of mind</CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+      
       {/* Services Preview Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Our Services</h2>
-            <p className="mt-4 text-xl text-gray-600">Professional tech solutions for all your needs</p>
+            <h2 className="text-3xl font-bold text-gray-900">Additional Services</h2>
+            <p className="mt-4 text-xl text-gray-600">Complete tech solutions for all your needs</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="service-card">
-              <CardHeader>
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
-                  <Archive className="h-7 w-7 text-blue-600" />
-                </div>
-                <CardTitle>Refurbished, Sales and Services</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>Quality refurbished computers and laptops at affordable prices.</CardDescription>
-              </CardContent>
-            </Card>
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="service-card">
               <CardHeader>
                 <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center mb-2">
@@ -135,8 +177,8 @@ const Index = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Featured Work</h2>
-            <p className="mt-4 text-xl text-gray-600">See our recent projects and services</p>
+            <h2 className="text-3xl font-bold text-gray-900">Our Laptop Inventory</h2>
+            <p className="mt-4 text-xl text-gray-600">Browse our collection of quality refurbished laptops</p>
           </div>
           
           <Carousel className="w-full max-w-5xl mx-auto">
@@ -145,36 +187,36 @@ const Index = () => {
                 <div className="p-1">
                   <div className="overflow-hidden rounded-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
-                      alt="Computer repair" 
+                      src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" 
+                      alt="Refurbished laptops" 
                       className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
                     />
                   </div>
-                  <h3 className="text-xl font-medium mt-4 text-center">Circuit Board Repair</h3>
+                  <h3 className="text-xl font-medium mt-4 text-center">Premium Refurbished Laptops</h3>
                 </div>
               </CarouselItem>
               <CarouselItem>
                 <div className="p-1">
                   <div className="overflow-hidden rounded-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" 
-                      alt="Laptop repair" 
+                      src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed" 
+                      alt="Laptop collection" 
                       className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
                     />
                   </div>
-                  <h3 className="text-xl font-medium mt-4 text-center">Laptop Services</h3>
+                  <h3 className="text-xl font-medium mt-4 text-center">Wide Range of Brands</h3>
                 </div>
               </CarouselItem>
               <CarouselItem>
                 <div className="p-1">
                   <div className="overflow-hidden rounded-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-                      alt="Computer support" 
+                      src="https://images.unsplash.com/photo-1484788984921-03950022c9ef" 
+                      alt="Quality tested laptops" 
                       className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
                     />
                   </div>
-                  <h3 className="text-xl font-medium mt-4 text-center">Technical Support</h3>
+                  <h3 className="text-xl font-medium mt-4 text-center">Quality Tested & Certified</h3>
                 </div>
               </CarouselItem>
             </CarouselContent>
@@ -247,8 +289,8 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Need Tech Support?</h2>
-          <p className="text-xl mb-8">Visit our store or contact us for immediate assistance</p>
+          <h2 className="text-3xl font-bold mb-4">Looking for a Reliable Laptop?</h2>
+          <p className="text-xl mb-8">Visit our store to explore our collection of refurbished laptops or call for availability</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/contact">
               <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-gray-100">
