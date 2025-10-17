@@ -21,8 +21,8 @@ const Index = () => {
       <section className="pt-20 relative bg-gradient-to-br from-blue-800 via-blue-600 to-teal-500 text-white">
         <div className="absolute inset-0 overflow-hidden opacity-20">
           <img 
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
-            alt="Computer background" 
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
+            alt="Laptop background" 
             className="w-full h-full object-cover"
           />
         </div>
