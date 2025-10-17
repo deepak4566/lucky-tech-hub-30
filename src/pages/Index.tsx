@@ -32,11 +32,11 @@ const Index = () => {
             <p className="text-xl md:text-2xl mb-4">Quality Refurbished Laptops at Unbeatable Prices</p>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Your trusted destination for affordable, high-performance refurbished laptops in Hyderabad</p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link to="/services">
+              <a href="#laptop-inventory">
                 <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
                   Browse Laptops <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-              </Link>
+              </a>
               <Link to="/contact">
                 <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700">
                   Visit Store
@@ -173,56 +173,95 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Featured Work Carousel */}
-      <section className="py-16 bg-white">
+      {/* Laptop Inventory Section */}
+      <section id="laptop-inventory" className="py-16 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Our Laptop Inventory</h2>
-            <p className="mt-4 text-xl text-gray-600">Browse our collection of quality refurbished laptops</p>
+            <p className="mt-4 text-xl text-gray-600">Browse our collection of quality refurbished laptops from top brands</p>
           </div>
           
-          <Carousel className="w-full max-w-5xl mx-auto">
-            <CarouselContent>
-              <CarouselItem>
-                <div className="p-1">
-                  <div className="overflow-hidden rounded-lg">
-                    <img 
-                      src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" 
-                      alt="Refurbished laptops" 
-                      className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
-                    />
-                  </div>
-                  <h3 className="text-xl font-medium mt-4 text-center">Premium Refurbished Laptops</h3>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="p-1">
-                  <div className="overflow-hidden rounded-lg">
-                    <img 
-                      src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed" 
-                      alt="Laptop collection" 
-                      className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
-                    />
-                  </div>
-                  <h3 className="text-xl font-medium mt-4 text-center">Wide Range of Brands</h3>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="p-1">
-                  <div className="overflow-hidden rounded-lg">
-                    <img 
-                      src="https://images.unsplash.com/photo-1484788984921-03950022c9ef" 
-                      alt="Quality tested laptops" 
-                      className="w-full h-96 object-cover transition-transform duration-300 hover:scale-105" 
-                    />
-                  </div>
-                  <h3 className="text-xl font-medium mt-4 text-center">Quality Tested & Certified</h3>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
-          </Carousel>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853" 
+                  alt="HP Laptops" 
+                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-center">HP Laptops</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-center">
+                  Premium HP laptops for business and personal use. Various models available.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45" 
+                  alt="Dell Laptops" 
+                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-center">Dell Laptops</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-center">
+                  Reliable Dell laptops perfect for professionals and students alike.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed" 
+                  alt="Lenovo Laptops" 
+                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-center">Lenovo Laptops</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-center">
+                  Durable Lenovo ThinkPad and IdeaPad series with excellent performance.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1603302576837-37561b2e2302" 
+                  alt="ASUS Laptops" 
+                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" 
+                />
+              </div>
+              <CardHeader>
+                <CardTitle className="text-center">ASUS Laptops</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-center">
+                  High-performance ASUS laptops ideal for gaming and productivity.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/contact">
+              <Button size="lg">
+                Contact Us for Availability <Phone className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
       
