@@ -89,24 +89,17 @@
 }
 
 @layer components {
-  /* Hero gradient */
-  .hero-gradient {
-    background: linear-gradient(135deg, hsl(var(--tech-dark)) 0%, hsl(var(--tech-slate)) 50%, hsl(var(--tech-blue)) 100%);
+  /* Grid pattern background */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
 
-  /* Tech card with glass effect */
+  /* Glass effect card */
   .glass-card {
     @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-xl;
-  }
-
-  /* Floating animation */
-  .float-animation {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  /* Pulse glow effect */
-  .pulse-glow {
-    animation: pulseGlow 2s ease-in-out infinite;
   }
 
   /* Service card hover */
@@ -119,29 +112,9 @@
     @apply transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-primary/30;
   }
 
-  /* CTA button glow */
-  .cta-glow {
-    @apply relative overflow-hidden;
-    box-shadow: 0 0 20px hsl(var(--tech-cyan) / 0.3);
-  }
-
-  .cta-glow:hover {
-    box-shadow: 0 0 30px hsl(var(--tech-cyan) / 0.5);
-  }
-
-  /* Stats counter */
-  .stat-card {
-    @apply bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20;
-  }
-
   /* Section divider */
   .section-divider {
     @apply h-1 w-20 bg-gradient-to-r from-primary to-accent rounded-full mx-auto;
-  }
-
-  /* Trust badge */
-  .trust-badge {
-    @apply inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm font-medium;
   }
 
   /* Feature icon wrapper */
@@ -151,17 +124,35 @@
 }
 
 @layer utilities {
-  /* Text gradient */
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary;
-  }
-
   /* Background mesh */
   .bg-mesh {
     background-image: 
       radial-gradient(at 40% 20%, hsl(var(--tech-blue) / 0.1) 0px, transparent 50%),
       radial-gradient(at 80% 0%, hsl(var(--tech-cyan) / 0.1) 0px, transparent 50%),
       radial-gradient(at 0% 50%, hsl(var(--tech-blue) / 0.05) 0px, transparent 50%);
+  }
+
+  /* Animation delays */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  .animation-delay-600 { animation-delay: 600ms; }
+  .animation-delay-700 { animation-delay: 700ms; }
+  .animation-delay-800 { animation-delay: 800ms; }
+  .animation-delay-2000 { animation-delay: 2000ms; }
+}
+
+/* Custom animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -174,46 +165,57 @@
   }
 }
 
-@keyframes pulseGlow {
-  0%, 100% {
-    opacity: 1;
-    box-shadow: 0 0 20px hsl(var(--tech-cyan) / 0.4);
+@keyframes floatParticle {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
   }
-  50% {
-    opacity: 0.8;
-    box-shadow: 0 0 40px hsl(var(--tech-cyan) / 0.6);
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(720deg);
+    opacity: 0;
   }
 }
 
-/* Animate on scroll */
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shine {
+  to {
+    transform: translateX(200%);
+  }
+}
+
 .animate-fade-up {
   animation: fadeUp 0.6s ease-out forwards;
   opacity: 0;
 }
 
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
 
-.animate-scale-in {
-  animation: scaleIn 0.5s ease-out forwards;
+.animate-float-particle {
+  animation: floatParticle 15s linear infinite;
 }
 
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+.animate-pulse-slow {
+  animation: pulseSlow 4s ease-in-out infinite;
 }
 
+.animate-shine {
+  animation: shine 3s ease-in-out infinite;
+}
