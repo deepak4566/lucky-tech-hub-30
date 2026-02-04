@@ -36,7 +36,7 @@ const Contact = () => {
                       rel="noreferrer"
                       className="text-gray-600 hover:text-blue-600"
                     >
-                      Near the Metro Station, Pillar No. 808, Kukatpally, Hyderabad, Telangana 500072
+                      3-2-33, Hanuman Temple Rd, Bagh Ameer, Baghameeri Village, Kukatpally, Hyderabad, Telangana 500011
                     </a>
                   </div>
                 </div>
