@@ -43,7 +43,7 @@ const Footer = () => {
       rel="noopener noreferrer"
       className="text-gray-300 hover:underline cursor-pointer"
     >
-      Near the Metro Station, Pillar No. 808, Kukatpally, Hyderabad, Telangana 500072
+      3-2-33, Hanuman Temple Rd, Bagh Ameer, Baghameeri Village, Kukatpally, Hyderabad, Telangana 500011
     </a>
               </li>
               <li className="flex items-center space-x-2">
